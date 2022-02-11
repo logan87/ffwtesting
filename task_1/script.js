@@ -1,20 +1,20 @@
-const box = document.querySelector('.font-box-container')
-const tabBtns = document.querySelectorAll('.tab-btn')
-const tabContent = document.querySelectorAll('.tab-content')
+const box = document.querySelector('.box-container')
+const tabBtns = document.querySelectorAll('.tabs__btn')
+const tabContent = document.querySelectorAll('.tabs-content__tab')
 
 box.addEventListener('click', function (e) {
   const id = e.target.dataset.id
-  console.log(id)
+
   if (id) {
     tabBtns.forEach(function (btn) {
-      btn.classList.remove('active')
+      btn.classList.remove('tabs__btn_active')
     })
-    e.target.classList.add('active')
+    e.target.classList.add('tabs__btn_active')
     tabContent.forEach(function (tab) {
-      tab.classList.remove('active')
+      tab.classList.remove('tabs-content__tab_active')
     })
     const element = document.getElementById(id)
     console.log(element)
-    element.classList.add('active')
+    element.classList.add('tabs-content__tab_active')
   }
 })

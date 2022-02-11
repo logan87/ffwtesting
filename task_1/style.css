@@ -22,6 +22,10 @@ body {
   letter-spacing: 0.5px;
 }
 
+h1 {
+  line-height: 32px;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -29,12 +33,8 @@ body {
   height: 100vh;
 }
 
-.font-box-container {
+.box-container {
   width: 50%;
-}
-
-h1 {
-  line-height: 32px;
 }
 
 .tabs {
@@ -43,25 +43,25 @@ h1 {
   row-gap: 20px;
 }
 
-.tab-btn {
+.tabs__btn {
   color: #ed0404;
 }
 
-.tab-btn.active {
+.tabs__btn_active {
   color: #d2eaef;
 }
 
-.tab-content:not(.active) {
+.tabs-content__tab:not(.tabs-content__tab_active) {
   display: none;
 }
 
-.tab-content {
+.tabs-content__tab {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.font-box-header {
+.box-container__header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -72,7 +72,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-.font-box {
+.tabs-content__tab {
   border-radius: 10px;
   border: 3px solid #d2eaef;
   padding: 50px;
@@ -108,7 +108,7 @@ input[type='radio']:checked+label {
   row-gap: 20px;
 }
 
-.card-img {
+.card-box__img {
   position: relative;
   min-width: 100px;
   height: 100px;
@@ -116,15 +116,7 @@ input[type='radio']:checked+label {
   border-radius: 20px;
 }
 
-.card-img.pink:after {
-  background: pink;
-}
-
-.card-img.blue:after {
-  background: blue;
-}
-
-.card-img::after {
+.card-box__img::after {
   content: '';
   position: absolute;
   inset: 3px;
@@ -132,7 +124,15 @@ input[type='radio']:checked+label {
   border-radius: 15px;
 }
 
-.card-img>span {
+.card-box__img_pink:after {
+  background: pink;
+}
+
+.card-box__img_blue:after {
+  background: blue;
+}
+
+.card-box__img>span {
   font-size: 25px;
   color: #fff;
   position: absolute;
@@ -142,23 +142,23 @@ input[type='radio']:checked+label {
   z-index: 2;
 }
 
-.card-img.big {
+.card-box__img_big {
   width: 150px;
   height: 150px;
 }
 
-.card-img.big>span {
+.card-box__img_big>span {
   font-size: 40px;
   left: 15px;
   bottom: 20px;
 }
 
-.card-text {
+.card-box__text {
   display: flex;
   column-gap: 10px;
 }
 
-.card-text:before {
+.card-box__text:before {
   content: '';
   min-width: 10px;
   height: 10px;
@@ -193,7 +193,7 @@ input[type='radio']:checked+label {
 
 @media only screen and (max-width:1200px) {
 
-  .font-box-container {
+  .box-container {
     width: 95%;
   }
 
@@ -207,9 +207,8 @@ input[type='radio']:checked+label {
     flex-wrap: wrap;
   }
 
-  .font-box {
+  .tabs-content__tab {
     padding: 20px;
   }
-
 
 }

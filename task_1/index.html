@@ -10,53 +10,52 @@
   </head>
   <body>
     <div class="container">
-      <div class="font-box-container">
-        <div class="font-box-header">
+      <div class="box-container">
+        <div class="box-container__header">
           <h1>Please Select One Font</h1>
           <div class="tabs">
-            <button class="tab-btn active" data-id="tab-1">my fonts</button>
-            <button class="tab-btn" data-id="tab-2">buy fonts</button>
+            <button class="tabs__btn tabs__btn_active" data-id="tab-1">my fonts</button>
+            <button class="tabs__btn" data-id="tab-2">buy fonts</button>
           </div>
         </div>
-        <div class="font-box">
-          <div class="tab-content active" id="tab-1">
-            <div class="cards"></div>
+        <div class="tabs-content">
+          <div class="tabs-content__tab tabs-content__tab_active" id="tab-1">
             <div class="form-control">
-              <div class="form-col">
+              <div class="form-control__col">
                 <input type="radio" id="contactChoice1" name="contact" />
                 <label class="card-box" for="contactChoice1">
-                  <div class="card-img big">
+                  <div class="card-box__img card-box__img_big">
                     <span>M</span>
                   </div>
-                  <span class="card-text"
+                  <span class="card-box__text"
                     >Meriwether <br />
                     project is led by <br />
                     Sorkin Type</span
                   >
                 </label>
               </div>
-              <div class="form-col">
+              <div class="form-control__col">
                 <div class="cards-hr">
-                  <div class="col">
-                    <input type="radio" id="contactChoice2" name="contact" />
-                    <label class="card-box" for="contactChoice2">
-                      <div class="card-img pink">
+                  <div class="cards-hr__col">
+                    <input type="radio" id="choice2" name="contact" />
+                    <label class="card-box" for="choice2">
+                      <div class="card-box__img card-box__img_pink">
                         <span>R</span>
                       </div>
-                      <span class="card-text"
+                      <span class="card-box__text"
                         >Roboto doesn't <br />
                         compromise, allo- <br />
                         wing letters</span
                       >
                     </label>
                   </div>
-                  <div class="col">
-                    <input type="radio" id="contactChoice3" name="contact" />
-                    <label class="card-box" for="contactChoice3">
-                      <div class="card-img blue">
+                  <div class="cards-hr__col">
+                    <input type="radio" id="choice3" name="contact" />
+                    <label class="card-box" for="choice3">
+                      <div class="card-box__img card-box__img_blue">
                         <span>NS</span>
                       </div>
-                      <span class="card-text"
+                      <span class="card-box__text"
                         >Noto Sans covers <br />
                         over 30 scripts</span
                       >
@@ -66,7 +65,7 @@
               </div>
             </div>
           </div>
-          <div class="tab-content" id="tab-2">
+          <div class="tabs-content__tab" id="tab-2">
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur cum quae doloribus quas ex. Minima dicta repellat doloribus nam provident
               quo distinctio, alias nulla inventore officia reprehenderit expedita quisquam autem. Soluta voluptate accusamus necessitatibus porro facilis,
