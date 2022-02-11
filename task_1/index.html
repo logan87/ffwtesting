@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="font-box-container">
+        <div class="font-box-header">
+          <h1>Please Select One Font</h1>
+          <div class="tabs">
+            <button class="tab-btn active" data-id="tab-1">my fonts</button>
+            <button class="tab-btn" data-id="tab-2">buy fonts</button>
+          </div>
+        </div>
+        <div class="font-box">
+          <div class="tab-content active" id="tab-1">
+            <div class="cards"></div>
+            <div class="form-control">
+              <div class="form-col">
+                <input type="radio" id="contactChoice1" name="contact" />
+                <label class="card-box" for="contactChoice1">
+                  <div class="card-img big">
+                    <span>M</span>
+                  </div>
+                  <span class="card-text"
+                    >Meriwether <br />
+                    project is led by <br />
+                    Sorkin Type</span
+                  >
+                </label>
+              </div>
+              <div class="form-col">
+                <div class="cards-hr">
+                  <div class="col">
+                    <input type="radio" id="contactChoice2" name="contact" />
+                    <label class="card-box" for="contactChoice2">
+                      <div class="card-img pink">
+                        <span>R</span>
+                      </div>
+                      <span class="card-text"
+                        >Roboto doesn't <br />
+                        compromise, allo- <br />
+                        wing letters</span
+                      >
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="radio" id="contactChoice3" name="contact" />
+                    <label class="card-box" for="contactChoice3">
+                      <div class="card-img blue">
+                        <span>NS</span>
+                      </div>
+                      <span class="card-text"
+                        >Noto Sans covers <br />
+                        over 30 scripts</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab-2">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur cum quae doloribus quas ex. Minima dicta repellat doloribus nam provident
+              quo distinctio, alias nulla inventore officia reprehenderit expedita quisquam autem. Soluta voluptate accusamus necessitatibus porro facilis,
+              consequuntur quidem mollitia at. Quas inventore tenetur quidem molestias. Vero placeat tenetur doloremque doloribus praesentium assumenda velit,
+              quia iure sunt voluptatibus officiis modi soluta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
